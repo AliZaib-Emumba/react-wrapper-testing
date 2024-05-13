@@ -21,7 +21,7 @@ describe('Test lit button', () => {
     const buttonElement = await screen.findByShadowText(buttonText);
 
     console.log('button el', buttonElement.textContent);
-    expect(buttonElement).toBeInTheDocument();
+    expect(buttonElement.textContent).toEqual(buttonText);
   });
 });
 
